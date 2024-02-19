@@ -35,7 +35,7 @@ RUN apt-get -y -qq update \
  && rm -rf /var/lib/apt/lists/*
 
 RUN julia -e 'import Pkg; Pkg.update()' && \
-    julia -e 'import Pkg; Pkg.add("MageMinApp")'
+    julia -e 'import Pkg; Pkg.add("MAGEMinApp")'
 
 USER $NB_USER
 
